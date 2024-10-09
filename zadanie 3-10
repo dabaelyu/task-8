@@ -1,0 +1,25 @@
+#!/bin/bash
+
+bitwise_operations() {
+    local num1=$1
+    local num2=$2
+
+    and_result=$((num1 & num2))
+    or_result=$((num1 | num2))
+    xor_result=$((num1 ^ num2))
+
+    echo "Числа: $num1 и $num2"
+    echo "Побитовое И: $and_result"
+    echo "Побитовое ИЛИ: $or_result"
+    echo "Исключающее ИЛИ: $xor_result"
+    echo
+}
+
+numbers=( 
+    "1122 908" 
+    "49608 33036" 
+)
+
+for pair in "${numbers[@]}"; do
+    bitwise_operations $pair
+done
