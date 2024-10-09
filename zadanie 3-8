@@ -1,0 +1,19 @@
+#!/bin/bash
+
+mod() {
+    local a=$1
+    local b=$2
+    echo $((a % b))
+}
+
+echo "1697 % 13 = $(mod 1697 13)"
+echo "1697 modulo 13 = $(mod 1697 13)"
+
+echo "772 % -45 = $(mod 772 -45)"
+echo "772 modulo -45 = $(mod 772 -45)"
+
+echo "-568 % 12 = $(mod -568 12)"
+echo "-568 modulo 12 = $(mod -568 12)"
+
+echo "-5437 % -17 = $(mod -5437 -17)"
+echo "-5437 modulo -17 = $(mod -5437 -17)"
