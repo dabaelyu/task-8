@@ -1,0 +1,14 @@
+#!/bin/bash
+
+num1=25649
+num2=-9154
+
+shift_right_1=$((num1 >> 3))
+shift_left_1=$((num1 << 2))
+shift_right_2=$((num2 >> 4))
+shift_left_2=$((num2 << 3))
+
+echo "25649 >> 3 = $shift_right_1"
+echo "25649 << 2 = $shift_left_1"
+echo "-9154 >> 4 = $shift_right_2"
+echo "-9154 << 3 = $shift_left_2"
